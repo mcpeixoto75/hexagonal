@@ -1,0 +1,17 @@
+spring:
+  datasource:
+      url: jdbc:sqlserver://localhost:1430;databaseName=cadastro;encrypt=true;trustServerCertificate=true
+      username: sa
+      password: '@Pecoma1975'
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2019Dialect
+      properties:
+        hibernate:
+          show_sql: true
+          format_sql: true
+peixoto:
+    client:
+        address:
+            url: http://localhost:8082/addresses
